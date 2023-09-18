@@ -73,7 +73,7 @@ function calcula_distancia(x, y){
 }
 
 
-function init_network(grafo, arvore) {
+function init_networkBFS(grafo, arvore) {
   // create an array with nodes
   let node_data = []
   for (const node in grafo) {
@@ -109,7 +109,7 @@ function init_network(grafo, arvore) {
   var edges = new vis.DataSet(edge_data);
 
   // create a network
-  var container = document.getElementById('networkBFS');
+  var container = document.getElementById('network');
 
   // provide the data in the vis format
   var data = {
@@ -120,54 +120,21 @@ function init_network(grafo, arvore) {
 
   // initialize your network!
   var network = new vis.Network(container, data, options);
+  return network;
 }
 
 
 
 
-function run(){
-  const grafoExemplo = {
-    '-53.12052_-27.90799': {
-      coordinates: [ -53.120523, -27.9079902 ],
-      ways: [ '-53.11963_-27.90860', '-53.12010_-27.90759' ]
-    },
-    '-53.11963_-27.90860': {
-      coordinates: [ -53.1196312, -27.9085981 ],
-      ways: [ '-53.12052_-27.90799', '-53.11926_-27.90893' ]
-    },
-    '-53.11926_-27.90893': {
-      coordinates: [ -53.1192609, -27.9089283 ],
-      ways: [ '-53.11963_-27.90860' ]
-    },
-    '-53.12010_-27.90759': {
-      coordinates: [ -53.1200986, -27.9075937 ],
-      ways: [ '-53.12052_-27.90799', '-53.11954_-27.90707' ]
-    },
-    '-53.11954_-27.90707': {
-      coordinates: [ -53.1195384, -27.9070703 ],
-      ways: [ '-53.12010_-27.90759', '-53.11879_-27.90641' ]
-    },
-    '-53.11879_-27.90641': {
-      coordinates: [ -53.1187916, -27.9064067 ],
-      ways: [ '-53.11954_-27.90707', '-53.11835_-27.90602' ]
-    },
-    '-53.11835_-27.90602': {
-      coordinates: [ -53.1183528, -27.9060167 ],
-      ways: [ '-53.11879_-27.90641', '-53.11829_-27.90596' ]
-    },
-    '-53.11829_-27.90596': {
-      coordinates: [ -53.1182856, -27.9059613 ],
-      ways: [ '-53.11835_-27.90602' ]
-    }
-  };
+function BFSrun(grafoExemplo, noInical, noFinal){
+  
 
-
-  const { arvore, caminho, custo } = buscaEmLargura(grafoExemplo, "-53.12052_-27.90799", "-53.12010_-27.90759");
+  const { arvore, caminho, custo } = buscaEmLargura(grafoExemplo, noInical, noFinal);
   console.log(arvore);
 
   console.log("Custo:", custo);
   console.log("Caminho:", caminho); // Deve imprimir "Custo mínimo: 9" e "Caminho: [ 'A', 'B', 'D', 'F' ]"
 
-  init_network(grafoExemplo, arvore)
+  return init_networkBFS(grafoExemplo, arvore)
 }
-run()
+

@@ -32,6 +32,189 @@
     },
     {
         "type": "Feature",
+        "id": "way/363476968",
+        "properties": {
+            "timestamp": "2023-07-28T06:54:43Z",
+            "version": "4",
+            "changeset": "139119575",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Paulo Graia",
+            "surface": "paved",
+            "id": "way/363476968"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1205293,
+                    -27.9060129
+                ],
+                [
+                    -53.1193031,
+                    -27.9049515
+                ],
+                [
+                    -53.1192354,
+                    -27.904895
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/363476969",
+        "properties": {
+            "timestamp": "2021-07-18T16:10:57Z",
+            "version": "3",
+            "changeset": "108198549",
+            "user": "Raphaelkaart",
+            "uid": "12468685",
+            "highway": "residential",
+            "name": "Rua Jango Biriva",
+            "id": "way/363476969"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1200281,
+                    -27.9090639
+                ],
+                [
+                    -53.1196907,
+                    -27.9086654
+                ],
+                [
+                    -53.1196312,
+                    -27.9085981
+                ],
+                [
+                    -53.1194815,
+                    -27.9084379
+                ],
+                [
+                    -53.1187962,
+                    -27.9078541
+                ],
+                [
+                    -53.1182789,
+                    -27.9073585
+                ],
+                [
+                    -53.1177616,
+                    -27.9068628
+                ],
+                [
+                    -53.1176973,
+                    -27.9068065
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/363476972",
+        "properties": {
+            "timestamp": "2023-07-28T06:54:43Z",
+            "version": "4",
+            "changeset": "139119575",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Josino da Silva",
+            "surface": "paved",
+            "id": "way/363476972"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1213228,
+                    -27.9051972
+                ],
+                [
+                    -53.120092,
+                    -27.9041237
+                ],
+                [
+                    -53.1200251,
+                    -27.904073
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/363476973",
+        "properties": {
+            "timestamp": "2023-07-28T06:54:43Z",
+            "version": "4",
+            "changeset": "139119575",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Idelfonso Ribeiro",
+            "surface": "paved",
+            "id": "way/363476973"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1209228,
+                    -27.9056103
+                ],
+                [
+                    -53.1196894,
+                    -27.9045569
+                ],
+                [
+                    -53.1196179,
+                    -27.9045018
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/629984346",
+        "properties": {
+            "timestamp": "2023-07-28T06:54:43Z",
+            "version": "5",
+            "changeset": "139119575",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Pedro Pinto",
+            "surface": "paved",
+            "id": "way/629984346"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1216825,
+                    -27.9048026
+                ],
+                [
+                    -53.1207209,
+                    -27.9040216
+                ],
+                [
+                    -53.1204096,
+                    -27.9037688
+                ],
+                [
+                    -53.1203453,
+                    -27.9037161
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
         "id": "way/363476964",
         "properties": {
             "timestamp": "2023-07-28T06:54:43Z",
@@ -73,5 +256,275 @@
                 ]
             ]
         }
-    }
+    },
+    {
+        "type": "Feature",
+        "id": "way/1192737012",
+        "properties": {
+            "timestamp": "2023-07-27T19:59:25Z",
+            "version": "1",
+            "changeset": "139105299",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Travessa Dona Isabela",
+            "id": "way/1192737012"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.119085,
+                    -27.9075491
+                ],
+                [
+                    -53.1195134,
+                    -27.9078951
+                ],
+                [
+                    -53.1200986,
+                    -27.9075937
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/1192737011",
+        "properties": {
+            "timestamp": "2023-07-27T19:59:25Z",
+            "version": "1",
+            "changeset": "139105299",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Joao Ernesto Schneider",
+            "id": "way/1192737011"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1187962,
+                    -27.9078541
+                ],
+                [
+                    -53.1184354,
+                    -27.9082103
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/954620487",
+        "properties": {
+            "timestamp": "2021-06-15T12:55:34Z",
+            "version": "1",
+            "changeset": "106402809",
+            "user": "Dudipatsar",
+            "uid": "12652607",
+            "highway": "tertiary_link",
+            "id": "way/954620487"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.1180046,
+                    -27.9064346
+                ],
+                [
+                    -53.1179424,
+                    -27.9063883
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/304641089",
+        "properties": {
+          "timestamp": "2023-07-28T06:54:43Z",
+          "version": "9",
+          "changeset": "139119575",
+          "user": "sulriograndense",
+          "uid": "17821098",
+          "highway": "tertiary",
+          "motor_vehicle": "yes",
+          "name": "Avenida Sao Joao Batista",
+          "oneway": "yes",
+          "surface": "paved",
+          "id": "way/304641089"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -53.1225227,
+              -27.9014049
+            ],
+            [
+              -53.1225202,
+              -27.9014573
+            ],
+            [
+              -53.1224256,
+              -27.901568
+            ],
+            [
+              -53.1222046,
+              -27.9018265
+            ],
+            [
+              -53.1220482,
+              -27.9020096
+            ],
+            [
+              -53.1220185,
+              -27.9020442
+            ],
+            [
+              -53.1215127,
+              -27.9025864
+            ],
+            [
+              -53.121238,
+              -27.9028808
+            ],
+            [
+              -53.1209837,
+              -27.9031535
+            ],
+            [
+              -53.1204096,
+              -27.9037688
+            ],
+            [
+              -53.120092,
+              -27.9041237
+            ],
+            [
+              -53.1196894,
+              -27.9045569
+            ],
+            [
+              -53.1193031,
+              -27.9049515
+            ],
+            [
+              -53.118893,
+              -27.9053903
+            ],
+            [
+              -53.1183528,
+              -27.9060167
+            ],
+            [
+              -53.1180046,
+              -27.9064346
+            ],
+            [
+              -53.1177616,
+              -27.9068628
+            ],
+            [
+              -53.1176976,
+              -27.9069465
+            ],
+            [
+              -53.1176258,
+              -27.907011
+            ],
+            [
+              -53.1174041,
+              -27.9071576
+            ],
+            [
+              -53.1171205,
+              -27.9073067
+            ],
+            [
+              -53.1166658,
+              -27.9074807
+            ],
+            [
+              -53.1160746,
+              -27.9077112
+            ],
+            [
+              -53.1157805,
+              -27.9078258
+            ],
+            [
+              -53.1153853,
+              -27.9079799
+            ],
+            [
+              -53.1150387,
+              -27.908115
+            ],
+            [
+              -53.1142868,
+              -27.9081351
+            ],
+            [
+              -53.113451,
+              -27.9081574
+            ],
+            [
+              -53.1131807,
+              -27.9081656
+            ],
+            [
+              -53.1121446,
+              -27.9081968
+            ],
+            [
+              -53.1119504,
+              -27.9082375
+            ],
+            [
+              -53.1118132,
+              -27.9082994
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "way/363476963",
+        "properties": {
+          "timestamp": "2023-07-28T06:54:43Z",
+          "version": "5",
+          "changeset": "139119575",
+          "user": "sulriograndense",
+          "uid": "17821098",
+          "highway": "residential",
+          "name": "Rua Antonio Oliveira",
+          "surface": "paved",
+          "id": "way/363476963"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -53.1201139,
+              -27.9064755
+            ],
+            [
+              -53.1195034,
+              -27.9059329
+            ],
+            [
+              -53.118893,
+              -27.9053903
+            ],
+            [
+              -53.1188249,
+              -27.9053379
+            ]
+          ]
+        }
+      }
 ]

@@ -27,7 +27,7 @@ function DFS_pilha(grafoExemplo, vertice) {
   return G;
 }
 
-function init_network(grafo, arvore) {
+function init_networkDFS(grafo, arvore) {
   // create an array with nodes
   let node_data = []
   for (const node in grafo) {
@@ -63,7 +63,7 @@ function init_network(grafo, arvore) {
   var edges = new vis.DataSet(edge_data);
 
   // create a network
-  var container = document.getElementById('networkDFS');
+  var container = document.getElementById('network');
 
   // provide the data in the vis format
   var data = {
@@ -74,50 +74,13 @@ function init_network(grafo, arvore) {
 
   // initialize your network!
   var network = new vis.Network(container, data, options);
+  return network;
 }
 
-function run(){
+function DFSrun(grafoExemplo, noInical, noFinal){
   
-  // Exemplo de uso
-  const grafoExemplo = {
-    '-53.12052_-27.90799': {
-      coordinates: [ -53.120523, -27.9079902 ],
-      ways: [ '-53.11963_-27.90860', '-53.12010_-27.90759' ]
-    },
-    '-53.11963_-27.90860': {
-      coordinates: [ -53.1196312, -27.9085981 ],
-      ways: [ '-53.12052_-27.90799', '-53.11926_-27.90893' ]
-    },
-    '-53.11926_-27.90893': {
-      coordinates: [ -53.1192609, -27.9089283 ],
-      ways: [ '-53.11963_-27.90860' ]
-    },
-    '-53.12010_-27.90759': {
-      coordinates: [ -53.1200986, -27.9075937 ],
-      ways: [ '-53.12052_-27.90799', '-53.11954_-27.90707' ]
-    },
-    '-53.11954_-27.90707': {
-      coordinates: [ -53.1195384, -27.9070703 ],
-      ways: [ '-53.12010_-27.90759', '-53.11879_-27.90641' ]
-    },
-    '-53.11879_-27.90641': {
-      coordinates: [ -53.1187916, -27.9064067 ],
-      ways: [ '-53.11954_-27.90707', '-53.11835_-27.90602' ]
-    },
-    '-53.11835_-27.90602': {
-      coordinates: [ -53.1183528, -27.9060167 ],
-      ways: [ '-53.11879_-27.90641', '-53.11829_-27.90596' ]
-    },
-    '-53.11829_-27.90596': {
-      coordinates: [ -53.1182856, -27.9059613 ],
-      ways: [ '-53.11835_-27.90602' ]
-    }
-  };
 
-  const arvore = DFS_pilha(grafoExemplo, "-53.12052_-27.90799", "-53.12010_-27.90759");
-  console.log(arvore);
+  const arvore = DFS_pilha(grafoExemplo, noInical, noFinal);
 
-  init_network(grafoExemplo, arvore)
+  return init_networkDFS(grafoExemplo, arvore)
 }
-
-run()

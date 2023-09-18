@@ -63,18 +63,15 @@ function criarGrafo(data) {
 }
 
 // Ler o arquivo JSON
-fs.readFile('C:/Users/arthu/workspace/IA - buscas/src/map/map1.json', 'utf8', (err, data) => {
+fs.readFile('C:/Users/arthu/workspace/IA - buscas/src/map/test.json', 'utf-8', (err, data) => {
     if (err) {
         console.error('Erro ao ler o arquivo JSON:', err);
         return;
     }
 
     try {
-        console.log(data);
         const jsonData = JSON.parse(data);
         const grafo = criarGrafo(jsonData);
-
-        console.log(grafo);
 
     } catch (error) {
         console.error('Erro ao analisar o JSON:', error);

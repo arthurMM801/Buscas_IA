@@ -23,6 +23,13 @@ function custoUniformeSearch(grafo, inicio, final) {
 
   const explorando = new Set();
   const pai = {};
+  const d = {};
+
+  for (const node of Object.keys(grafo)) {
+    d[node] = Infinity;
+    pai[node] = null;
+  }
+  d[inicio] = 0;
 
   while (!fila.isEmpty()) {
     const { node, distancia } = fila.dequeue();
@@ -44,12 +51,14 @@ function custoUniformeSearch(grafo, inicio, final) {
       const vizinhos = grafo[node].ways || [];
 
       for (const n of vizinhos) {
-        const nDistancia = calcula_distancia(grafo[node], grafo[n])
+        const nDistancia = calcula_distancia(grafo[node], grafo[n]);
         const novaDistancia = distancia + nDistancia;
-        fila.enqueue({ node: n, distancia: novaDistancia });
 
-        // Registre o nó anterior para reconstruir o caminho
-        pai[n] = node;
+        if (novaDistancia < d[n]) { // Verifique se a nova distância é menor
+          fila.enqueue({ node: n, distancia: novaDistancia });
+          pai[n] = node;
+          d[n] = novaDistancia;
+        }
       }
     }
   }
@@ -57,6 +66,7 @@ function custoUniformeSearch(grafo, inicio, final) {
   console.log('Caminho não encontrado');
   return { caminho: null, distancia: null }; // Caminho não encontrado
 }
+
 
 function calcula_distancia(x, y){
 
@@ -70,11 +80,12 @@ function buildCaminho(pai, current) {
   while (pai[current]) {
     current = pai[current];
     caminho.unshift(current);
+    console.log(caminho);
   }
   return caminho;
 }
 
-function init_network(grafo, caminho) {
+function init_networkBCU(grafo, caminho) {
   console.log(caminho);
 
   // Converter o grafo para o formato esperado pela vis.js
@@ -128,58 +139,24 @@ function init_network(grafo, caminho) {
   const options = {};
 
   // Criar a visualização do grafo
-  const container = document.getElementById('networkBCU');
+  const container = document.getElementById('network');
   const network = new vis.Network(container, data, options);
+  return network
 }
 
-function run(){
+function BCUrun(grafoExemplo, noInical, noFinal){
   
-  // Exemplo de uso
-  const grafoExemplo = {
-    '-53.12052_-27.90799': {
-      coordinates: [ -53.120523, -27.9079902 ],
-      ways: [ '-53.11963_-27.90860', '-53.12010_-27.90759' ]
-    },
-    '-53.11963_-27.90860': {
-      coordinates: [ -53.1196312, -27.9085981 ],
-      ways: [ '-53.12052_-27.90799', '-53.11926_-27.90893' ]
-    },
-    '-53.11926_-27.90893': {
-      coordinates: [ -53.1192609, -27.9089283 ],
-      ways: [ '-53.11963_-27.90860' ]
-    },
-    '-53.12010_-27.90759': {
-      coordinates: [ -53.1200986, -27.9075937 ],
-      ways: [ '-53.12052_-27.90799', '-53.11954_-27.90707' ]
-    },
-    '-53.11954_-27.90707': {
-      coordinates: [ -53.1195384, -27.9070703 ],
-      ways: [ '-53.12010_-27.90759', '-53.11879_-27.90641' ]
-    },
-    '-53.11879_-27.90641': {
-      coordinates: [ -53.1187916, -27.9064067 ],
-      ways: [ '-53.11954_-27.90707', '-53.11835_-27.90602' ]
-    },
-    '-53.11835_-27.90602': {
-      coordinates: [ -53.1183528, -27.9060167 ],
-      ways: [ '-53.11879_-27.90641', '-53.11829_-27.90596' ]
-    },
-    '-53.11829_-27.90596': {
-      coordinates: [ -53.1182856, -27.9059613 ],
-      ways: [ '-53.11835_-27.90602' ]
-    }
-  };
-
-  const resultado = custoUniformeSearch(grafoExemplo, "-53.12052_-27.90799", "-53.12010_-27.90759");
+  const resultado = custoUniformeSearch(grafoExemplo, noInical, noFinal);
+  console.log(resultado);
 
   if (resultado.caminho) {
     console.log('Caminho encontrado:', resultado.caminho);
+    console.log("123");
     console.log('Custo Total:', resultado.distancia);
+    return init_networkBCU(grafoExemplo, resultado.caminho)
   } else {
     console.log('Caminho não encontrado');
   }
 
-  init_network(grafoExemplo, resultado.caminho)
+  
 }
-
-run();
