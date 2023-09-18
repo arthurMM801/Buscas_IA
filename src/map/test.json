@@ -1,0 +1,77 @@
+[
+    {
+        "type": "Feature",
+        "id": "way/363476966",
+        "properties": {
+            "timestamp": "2023-07-27T19:59:25Z",
+            "version": "2",
+            "changeset": "139105299",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Elvira Vedoi",
+            "id": "way/363476966"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.120523,
+                    -27.9079902
+                ],
+                [
+                    -53.1196312,
+                    -27.9085981
+                ],
+                [
+                    -53.1192609,
+                    -27.9089283
+                ]
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "id": "way/363476964",
+        "properties": {
+            "timestamp": "2023-07-28T06:54:43Z",
+            "version": "5",
+            "changeset": "139119575",
+            "user": "sulriograndense",
+            "uid": "17821098",
+            "highway": "residential",
+            "name": "Rua Aristides Vicari",
+            "surface": "paved",
+            "id": "way/363476964"
+        },
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -53.120523,
+                    -27.9079902
+                ],
+                [
+                    -53.1200986,
+                    -27.9075937
+                ],
+                [
+                    -53.1195384,
+                    -27.9070703
+                ],
+                [
+                    -53.1187916,
+                    -27.9064067
+                ],
+                [
+                    -53.1183528,
+                    -27.9060167
+                ],
+                [
+                    -53.1182856,
+                    -27.9059613
+                ]
+            ]
+        }
+    }
+]
