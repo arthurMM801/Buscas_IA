@@ -1,6 +1,6 @@
 
 
-function DFS_pilha(grafoExemplo, vertice) {
+function DFS_pilha(grafoExemplo, vertice, objetivo) {
   const explorados = [vertice];
   const pilha = [vertice];
 
@@ -10,6 +10,11 @@ function DFS_pilha(grafoExemplo, vertice) {
 
   while (pilha.length > 0) {
     const u = pilha.pop();
+
+    if(u == objetivo){
+      console.log("Objetivo encontrado");
+      return G;
+    }
     for (const vizinho of grafoExemplo[u].ways) {
       if (!explorados.includes(vizinho)) {
 
