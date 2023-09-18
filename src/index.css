@@ -1,0 +1,41 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1200px;
+}
+
+.button {
+    background-color: blue;
+    /* Green */
+    border-radius: .3rem;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+#network {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid lightgray;
+}
+
+#select-serch {
+    width: 20em;
+    height: 3em;
+    padding: 8px;
+    margin-bottom: 25px;
+    padding: 0 4em 0 1em;
+    border-radius: 0.25em;
+    border: 3px solid #320a28;
+    cursor: pointer;
+}
+
+option{
+    font-size: 20px;
+}
