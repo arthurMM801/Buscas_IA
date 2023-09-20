@@ -138,7 +138,7 @@ function search(){
     }
 
     const noInical = '-53.121_-27.908'
-    const noFinal = '-53.119_-27.906'
+    const noFinal = '-53.122_-27.905'
     
     if(id == 1){
         state.network = BFSrun(graph, noInical, noFinal);

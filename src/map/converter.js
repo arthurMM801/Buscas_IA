@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { Module } = require('module');
 
 // Função para criar o grafo a partir dos dados JSON
 function criarGrafo(data) {
@@ -77,5 +76,3 @@ fs.readFile('C:/Users/arthu/workspace/IA - buscas/src/map/test.json', 'utf-8', (
         console.error('Erro ao analisar o JSON:', error);
     }
 });
-
-Module.export = {criarGrafo}
